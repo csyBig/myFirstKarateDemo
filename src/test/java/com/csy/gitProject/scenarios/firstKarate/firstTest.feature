@@ -1,4 +1,6 @@
 Feature: test login api
+
+
   Scenario: sb login
     Given url "http://localhost:8082"
     And path "isAdmin"
