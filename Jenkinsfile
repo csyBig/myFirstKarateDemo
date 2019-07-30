@@ -1,5 +1,10 @@
 pipeline {
-  agent { docker 'maven:3.3.3' }
+  agent {
+    docker {
+      image 'maven'
+    }
+
+  }
   triggers { pollSCM('* 0/20 * * * ?') }
   stages {
     stage('sleep') {
