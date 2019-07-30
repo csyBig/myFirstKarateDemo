@@ -5,7 +5,7 @@ pipeline {
     }
 
   }
-  triggers { pollSCM('* 0/20 * * * ?') }
+  triggers { pollSCM(''H */4 * * ?'') }
   stages {
     stage('sleep') {
       steps {
